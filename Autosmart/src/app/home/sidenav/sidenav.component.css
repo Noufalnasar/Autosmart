@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+ 
+  
+  .logo {
+      width: 140px;
+      height: 140px;
+      margin-top: 20px;
+      border-radius: 50%;
+      margin: 0 auto;
+  }
+  
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 54vh;
+  }
+  #card1{
+      height: 59vh;
+  }
+  .logo img{
+    max-width: 100%;
+  }
+  
+  .sidenav{
+    background-color:white ;
+    left: -250px;
+    width: 190px;
+    margin-left: 10px;
+    margin-top: -60px;
+    height: 97vh;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 200px;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transition:  all .5s ease;
+  }
+  
+  .sidenav a{
+    display: block;
+    padding: 20px 0;
+    color: rgb(8, 8, 8);
+    font-size: 15px;
+  }
+  
+  .sidenav a:hover{
+    color: rgb(243, 54, 54);
+    font-weight: bold;
+    border-right: 2px solid #ffffff;
+  }
+  
+  .sidenav .fa{
+    display: inline-block;
+  }
+  
+  .single-nav {
+      border-bottom: 1px solid #fff;
+  }
+  
+  #icon{
+    display: none;
+  }
+  
+  label #openbtn, label #closebtn{
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  label #openbtn{
+    top: 20px;
+    left: 70px;
+    font-size: 40px;
+    border-radius: 10px;
+    background-color: #333;
+    padding: 10px;
+    color:#fff;
+  }
+  
+  label #closebtn{
+  z-index: 1111;
+  top: 20px;
+  left: -212px;
+  font-size: 30px;
+  }
+  
+  #icon:checked ~ .sidenav{
+    left:0;
+  }
+  
+  #icon:checked ~ label #closebtn {
+      left: 212px;
+      color: #fff;
+  }
+  
+  #icon:checked ~ label #openbtn{
+    left:170px;
+    opacity: 0;
+  }
+  
+  #icon:checked ~ .content{
+    margin-left: 130px;
+  }
+  
+  .content {
+      height: 100vh;
+      text-align: center;
+      padding: 100px 100px;
+      transition: all .5s;
+      text-transform: uppercase;
+  }
+  
